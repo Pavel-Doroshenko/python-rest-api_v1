@@ -4,20 +4,20 @@ from eshop.businsess_logic.product import Product
 
 _products: List[Product] = [
     Product(
-        id='1',
-        name='Телевизор',
+        id="1",
+        name="Телевизор",
         price=15,
     ),
     Product(
-        id='2',
-        name='Кофемашина',
+        id="2",
+        name="Кофемашина",
         price=10,
     ),
     Product(
-        id='3',
-        name='Ноутбук',
+        id="3",
+        name="Ноутбук",
         price=12,
-    )
+    ),
 ]
 
 

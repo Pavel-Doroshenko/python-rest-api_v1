@@ -11,7 +11,7 @@ def order_create(product_ids: List[str]):
     for id in product_ids:
         product = product_get_by_id(id)
         if product is None:
-            raise Exception(f'Could not create order: Product with id {id} not exists')
+            raise Exception(f"Could not create order: Product with id {id} not exists")
 
         products.append(product)
 
