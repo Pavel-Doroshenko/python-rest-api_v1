@@ -26,7 +26,6 @@ app = Flask(__name__)
 def order_create_endpoint():
     try:
         order_create_dto = OrderCreateDtoSchema().load(request.json)
-        print(order_create_dto)
     except ValidationError as err:
         return err.messages, 400
 
@@ -93,7 +92,6 @@ def product_get_many_endpoint():
 def product_create_endpoint():
     try:
         product_json = ProductSchema().load(request.json)
-        print(type(f"первый принт{product_json}"))
     except ValidationError as err:
         return err.messages, 400
     try:
